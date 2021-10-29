@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/scss.css')}}">
+    <script src="{{ url_for('static', filename='js/validar.js') }}"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Universidad de Latam</a>
+        </nav>
+</head>
+<body>
+    <div class="container2">
+        <h1 style="color: white;">Curso</h1>
+        {% for message in get_flashed_messages() %}
+        <div> {{ message }} </div>
+        {% endfor %}   
+             
+    <table class="table table-dark table-striped">
+        <div class="container2">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Materia</th>
+                <th scope="col">Creditos</th>
+                <th scope="col">Docente</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td> Quimica</td>
+                <td>50 </td>
+                <td> Aurora Rodriguez</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Biologia</td>
+                <td>50</td>
+                <td> Libio Perez</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Microbiologia</td>
+                <td>50</td>
+                <td>Esperanza Romero</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+</body>
+</html>

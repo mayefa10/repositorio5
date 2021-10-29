@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/scss.css')}}">
+    <script src="{{ url_for('static', filename='js/validar.js') }}"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Universidad de Latam</a>
+        </nav>
+</head>
+<body>
+  {% for message in get_flashed_messages() %}
+    <div> {{ message }} </div>
+    {% endfor %}
+   <form action="register" method="POST">
+    <div class="container1" >
+        <h1 style="color: white;">Estudiante</h1>
+        
+        <img src="resources/docente.png"alt="" width="50%" />
+   
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            
+            <th scope="col">nombre</th>
+            <th scope="col">usuario</th>
+            <th scope="col">apellidos</th>
+            <th scope="col">estudios</th>
+            <th scope="col">idioma</th>
+            <th scope="col">carrera</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+          <tr>
+            
+            <td>nombre</td>
+            <td>usuario</td>
+            <td>apellidos</td>
+            <td>estudios</td>
+            <td>idioma</td>
+            <td>carrera</td>
+                       
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+  </form>
+</body>
+</html>

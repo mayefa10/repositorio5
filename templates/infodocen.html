@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/scss.css')}}">
+    <script src="{{ url_for('static', filename='js/validar.js') }}"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Universidad de Latam</a>
+        </nav>
+    
+</head>
+<body>
+    <div class="container1">
+        <h1 style="color: white;">Nuestro Plantel educativo</h1>
+        
+        <img src="static/images/docente.png"alt="" width="50%" />
+      <br>
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Profesión</th>
+            <th scope="col">Universidad de la que es egresado</th>
+            <th scope="col">Asignatura</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Aurora Rodriguez</td>
+            <td>Ingeniero Quimico</td>
+            <td>Universidad de Latam</td>
+            <td>Quimica</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Libio Perez</td>
+            <td>Biologo</td>
+            <td>Universidad de Latam</td>
+            <td>Biología</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Esperanza Romero</td>
+            <td>Microbiológo</td>
+            <td>Universidad de Latam</td>
+            <td>Microbiologia</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>

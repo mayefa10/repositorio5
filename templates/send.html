@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{%block header%}
+    <h1> Envío de mensajes </h1>
+{% endblock %}
+
+{% block content %}
+    
+<form name="sendForm" method="post" action="{{ url_for('send') }}">
+      <div>
+        <label for="para">Para:</label>
+        <input name="para" id="para" required />
+      </div>
+      <div>
+        <label for="asunto">Asunto:</label>
+        <input name="asunto" id="asunto" required />
+      </div>
+
+      <div>
+        <label for="mensaje">Mensaje::</label>
+        <textarea name="mensaje" id="mensaje" required ></textarea>
+      </div>
+
+      <input type="submit" value="Send">
+ </form>
+
+{% endblock %}

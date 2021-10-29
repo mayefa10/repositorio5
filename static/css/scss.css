@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+.login-page {
+  width: 350px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 10;
+  background: #928b8b;
+  max-width: 800px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  
+}
+.form1 {
+  position: relative;
+  z-index: 1;
+  background: #928b8b;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 16;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form3 {
+  position: relative;
+  z-index: 5;
+  background: #928b8b;
+  max-width: 450px;
+  margin: 0 auto 100px;
+  padding: 70px;
+  text-align: linear;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4c6faf;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #435ca0;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4c66af;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+   background-image: url(../images/fondo1.png);  
+}
+.nav{
+  background: transparent;
+  padding: 15px;
+ 
+}
+h3{
+
+  text-align: center;
+}
+.imagenL{
+  position:absolute;left: 800px;top: 330px;
+}
+.container1{
+  position:auto;
+  z-index: 35;
+  max-width: 500px;
+  padding: 0;
+  font-size: 15px;
+  margin: 200px auto;
+  text-align: center;
+
+}
+.contenido{
+  width:20%;
+  margin-top: 0px;
+  margin-left:350px;
+  position:absolute;left:7px; top: 344px;
+  background-color:transparent;
+}
+.container2{
+  position:auto;
+  z-index: 30;
+  max-width: 700px;
+  padding: 0;
+  font-size: 13px;
+  margin: 120px auto;
+  text-align: center;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: transparent;
+}
+
+li a {
+  display: block;
+  color: rgb(250, 250, 250);
+  padding: 8px 0 8px 16px;
+  text-decoration: none;
+
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+  

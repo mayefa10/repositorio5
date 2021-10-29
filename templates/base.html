@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<title>{%block title %}{% endblock %}</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/scss.css')}}">
+<script src="{{ url_for('static', filename='js/validar.js') }}"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Universidad de Latam</a>
+    </nav>
+
+    <ul>
+        {% if g.user %}
+        <p style = "font-family:courier,arial,helvética;">
+            <li><a href="{{ url_for('inicio') }}">inicio </a></li>
+            <br>
+            <li><a href="{{ url_for('infoest') }}">Estudiante </a></li>
+            <br>
+            <li><a href=" {{ url_for('infodocen') }}">Docente</a></li>
+            <br>
+            <li><a href="{{ url_for('detalleact') }}">Detalle de actividades y notas</a></li>
+            <br>
+            <li><a href="{{ url_for('curso') }}">Curso</a></li>
+            <br>
+            <li><a href="{{ url_for('downloadpdf')}}"> Descargar documento PDF </a></li> 
+            <br>
+            <li><a href="{{ url_for('downloadimage')}}"> Descargar Imagen </a></li>
+            <br>
+                          
+      
+            
+
+        {% else %}
+            <li><a href="{{ url_for('register')}}">Registrate </a></li> 
+            <br>
+            <li><a href="{{ url_for('login')}}"> Iniciar Sesión </a></li> 
+           
+        {% endif %}
+        <div>
+            <li><a href="{{ url_for('contactos')}}"> Contactenos </a></li> 
+        </div>
+        <br>
+        <li><a href="{{ url_for('logout')}}"> Cerrar Sesión </a></li> 
+      </p>
+      </ul>
+ 
+    {% for message in get_flashed_messages() %}
+        <div>{{ message }}</div>
+    {% endfor %}
+
+    {% block content %}
+    {% endblock %}

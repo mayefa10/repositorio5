@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/scss.css')}}">
+  <script src="{{ url_for('static', filename='js/validar.js') }}"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Universidad de Latam</a>
+  </nav>
+</head>
+
+<body>
+  <div class="container2">
+    <h1 style="color: white;">Detalle Actividad y Notas</h1>
+
+    <img src="resources/docente.png" alt="" width="50%" />
+
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Nombre actividad</th>
+          <th scope="col">Materia</th>
+          <th scope="col">Fecha de entrega</th>
+          <th scope="col">Comentario</th>
+          <th scope="col">Nota</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"> actividad 1</th>
+          <td>Quimica</td>
+          <td>27-marzo</td>
+          <td>----</td>
+          <td>-----</td>
+         
+        <tr>
+          <th scope="row"> actividad 1</th>
+          <td>Microbiologia</td>
+          <td>27-marzo</td>
+          <td>----</td>
+          <td>-----</td>
+          
+
+        <tr>
+          <th scope="row">catividad 1</th>
+          <td>Biologia</td>
+          <td>27-marzo</td>
+          <td>----</td>
+          <td>-----</td>
+         
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
